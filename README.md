@@ -151,14 +151,21 @@ Built with NASA Power of 10 coding rules:
 - const/let only (no var)
 - Every return value checked
 
-## BeLikeNative Ecosystem
+---
 
-This action is part of the BeLikeNative suite of writing tools:
+## BeLikeNative Developer Tools
 
-- **[BeLikeNative](https://belikenative.com)** -- AI-powered writing assistant for non-native English speakers
-- **[Chrome Extension](https://chromewebstore.google.com/detail/belikenative)** -- Real-time writing assistance in your browser
-- **Writing Assistant** (this action) -- Automated PR quality checks
-- **Commit Message Reviewer** -- Convention and grammar checks for git commits
+This tool is part of the **[BeLikeNative](https://belikenative.com)** ecosystem — AI-powered writing tools for non-native English speakers.
+
+| Tool | Type | Description |
+|------|------|-------------|
+| [Grammar Check](https://github.com/theluckystrike/belikenative-grammar-check) | GitHub Action | PR grammar checker with 60 rules and L1-aware insights |
+| [i18n Checker](https://github.com/theluckystrike/bln-i18n-checker) | GitHub Action | Find hardcoded strings that need internationalization |
+| [Commit Lint](https://github.com/theluckystrike/bln-commit-lint) | GitHub Action | Commit message grammar, format & clarity checker |
+| [MCP Grammar Server](https://github.com/theluckystrike/bln-mcp-grammar-server) | MCP Server | 70 local grammar rules for Claude Desktop & Cursor |
+| [Website Grader](https://github.com/theluckystrike/bln-website-grader) | Web Tool | Free website performance grader |
+
+**[BeLikeNative Chrome Extension](https://chromewebstore.google.com/detail/belikenative-ai-writing-a/gchojmpfpbpmpfgdppfdkpchikbcgabp)** — AI writing assistant for 100+ languages, 15 tones, 15 styles. 10,000+ users, 4.6★ rating.
 
 ## License
 
