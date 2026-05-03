@@ -1,0 +1,43 @@
+name: "BeLikeNative Writing Assistant"
+description: "Comprehensive writing quality analysis for docs and markdown. Readability, structure, clarity, and L1-aware suggestions. Powered by BeLikeNative."
+author: "BeLikeNative"
+
+branding:
+  icon: "edit-3"
+  color: "blue"
+
+inputs:
+  github-token:
+    description: "GitHub token for posting review comments"
+    required: true
+    default: ${{ github.token }}
+  severity-threshold:
+    description: "Minimum severity to report: 'info', 'warning', or 'error'"
+    required: false
+    default: "warning"
+  file-patterns:
+    description: "Comma-separated glob patterns for files to analyze"
+    required: false
+    default: "**/*.md,**/*.mdx,**/*.txt"
+  min-score:
+    description: "Minimum overall writing quality score (0-100) to pass the check"
+    required: false
+    default: "70"
+
+outputs:
+  overall-score:
+    description: "The overall writing quality score (0-100)"
+  readability-score:
+    description: "Readability sub-score (0-100)"
+  structure-score:
+    description: "Structure sub-score (0-100)"
+  clarity-score:
+    description: "Clarity sub-score (0-100)"
+  inclusivity-score:
+    description: "Inclusivity sub-score (0-100)"
+  l1-awareness-score:
+    description: "L1 awareness sub-score (0-100)"
+
+runs:
+  using: "node20"
+  main: "src/index.mjs"
