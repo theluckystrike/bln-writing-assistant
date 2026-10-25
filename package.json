@@ -1,5 +1,6 @@
 {
   "name": "bln-writing-assistant",
+  "repository": {"type": "git", "url": "theluckystrike/bln-writing-assistant.git"},
   "version": "1.0.0",
   "description": "GitHub Action: Comprehensive writing quality analysis for docs. Readability, structure, clarity & L1-aware suggestions. Powered by BeLikeNative.",
   "type": "module",
